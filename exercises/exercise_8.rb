@@ -5,15 +5,10 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
+require_relative './exercise_7'
 
-puts "Exercise 7"
+puts "Exercise 8"
 puts "----------"
 
-# Your code goes here ...
-@storeName = Store.find_by(name: "Bat" )
-puts @storeName
+@store2.employees.create(first_name: "Toby", last_name: "Schaefer", hourly_rate: 100)
 
-store = Store.create(name: "Bat")
-
-puts store.valid?
-# puts store.errors.messages
