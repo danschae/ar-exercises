@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+@storeName = Store.find_by(name: "Bat" )
+puts @storeName
+
+store = Store.create(name: "Bat")
+
+puts store.valid?
+puts store.errors.messages
